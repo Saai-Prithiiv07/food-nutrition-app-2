@@ -17,7 +17,7 @@ export default function useFoodSearch() {
       setError(null);
 
       const res = await axios.get(
-        `https://world.openfoodfacts.org/cgi/search.pl?search_terms=${query}&json=true`
+        `/cgi/search.pl?search_terms=${query}&json=true`
       );
 
       setData(res.data.products);

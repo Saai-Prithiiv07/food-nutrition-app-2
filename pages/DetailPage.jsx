@@ -17,7 +17,7 @@ export default function DetailPage({ dispatch }) {
     const fetchProduct = async () => {
       try {
         const res = await axios.get(
-          `https://world.openfoodfacts.org/api/v0/product/${barcode}.json`
+          `/api/v0/product/${barcode}.json`
         );
 
         if (isMounted) {
